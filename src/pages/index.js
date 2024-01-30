@@ -1,8 +1,36 @@
 /* eslint-disable @next/next/no-img-element */
 import Meta from "@/components/Meta";
 import MainLayout from "@/layouts/Main";
+import { useState } from "react";
 
 export default function Home() {
+  let photos = [
+    { path: "/images/safarila.webp" },
+    {
+      path: "/images/safarila-street.jpg",
+    },
+    {
+      path: "/images/nyotnyot.jpg",
+    },
+  ];
+  const [photo, setPhoto] = useState(photos[0].path);
+
+  const changePhoto = () => {
+    switch (photo) {
+      case "/images/safarila.webp":
+        setPhoto(photos[1].path);
+        break;
+
+      case "/images/safarila-street.jpg":
+        setPhoto(photos[2].path);
+        break;
+
+      default:
+        setPhoto(photos[0].path);
+        break;
+    }
+  };
+
   return (
     <MainLayout>
       <Meta
@@ -13,7 +41,7 @@ export default function Home() {
       <main className="flex flex-col gap-y-5 items-center justify-center main-landing-page p-5 relative dark:bg-dim-1">
         <div className="flex flex-col gap-y-7 items-center w-full xl:flex-row xl:gap-x-16 xl:justify-center">
           <img
-            src="/images/safarila.webp"
+            src={photo}
             width="30"
             height="30"
             className="border-4 border-gray-700 dark:border-gold-1 dark:border-opacity-40 duration-500 lg:w-1/4 md:w-1/3 transition-all w-1/2 xl:w-72"
@@ -22,13 +50,13 @@ export default function Home() {
               animation: "morph 8s ease-in-out infinite 1s",
               borderRadius: "60% 40% 30% 70% / 60% 30% 70% 40%",
             }}
-            // onClick={changePhoto}
+            onClick={changePhoto}
           />
           <div className="flex flex-col gap-y-7 items-center xl:items-start xl:w-min">
             <h1 className="dark:text-gold-1 duration-500 font-extrabold font-family-Montserrat hover:tracking-widest text-3xl text-gray-800 text-shadow tracking-normal transition-all uppercase whitespace-nowrap xl:text-5xl">
               Syahrul Safarila
             </h1>
-            <p className="dark:hover:text-opacity-100 dark:text-gold-1 dark:text-opacity-80 duration-500 hover:text-gray-800 italic text-center text-gray-600 transition-all xl:text-left xl:text-xl">
+            <p className="dark:text-gold-1 duration-500 italic text-center text-gray-600 transition-all xl:text-left xl:text-xl">
               Backend & Frontend Web Developer
             </p>
             <div className="dark:hidden flex gap-x-4">
