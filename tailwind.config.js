@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require("tailwindcss/colors");
+
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -7,11 +9,32 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        cyan: colors.cyan,
+        amber: colors.amber,
+        "cool-gray": colors.gray,
+        dim: {
+          1: "#112838",
+          2: "#123247",
+        },
+        gold: {
+          1: "#CFA87F",
+        },
       },
+    },
+  },
+  variants: {
+    extend: {
+      opacity: ["disabled"],
+      cursor: ["disabled"],
+      backgroundColor: ["active"],
+      grayscale: ["hover", "focus"],
+      contrast: ["hover", "focus"],
+      borderRadius: ["hover", "focus"],
+      letterSpacing: ["hover", "focus"],
+      sepia: ["dark", "hover"],
+      animation: ["hover"],
+      display: ["dark"],
     },
   },
   plugins: [],
