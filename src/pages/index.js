@@ -1,14 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
+import Meta from "@/components/Meta";
 import MainLayout from "@/layouts/main";
 
 export default function Home() {
   return (
     <MainLayout>
-      {/* <Meta
+      <Meta
         title="Web Developer With React, Tailwind CSS, And Laravel | Syahrul Safarila"
         description="Developing some website with React as javascript library, Tailwind CSS as CSS framework, and Laravel as backend's framework"
         image="https://i.pinimg.com/originals/1c/09/36/1c0936c9e5cd191312bcdc8216db9c08.jpg"
-      /> */}
+      />
       <main className="flex flex-col gap-y-5 items-center justify-center main-landing-page p-5 relative dark:bg-dim-1">
         <div className="flex flex-col gap-y-7 items-center w-full xl:flex-row xl:gap-x-16 xl:justify-center">
           <img
