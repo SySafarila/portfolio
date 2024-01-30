@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Meta from "@/components/Meta";
-import MainLayout from "@/layouts/main";
+import MainLayout from "@/layouts/Main";
 
 export default function Portfolio() {
   const projects = [
