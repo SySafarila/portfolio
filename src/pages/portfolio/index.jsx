@@ -103,8 +103,8 @@ export default function Portfolio() {
                   alt="acp-indonesia"
                   className="h-full object-center object-contain w-full"
                 />
-                <div className="absolute backdrop-blur-sm backdrop-filter bg-black bg-opacity-60 cursor-default flex flex-col font-family-Montserrat group-hover:opacity-100 inset-0 items-center justify-center opacity-0 text-gray-100 transition-all">
-                  <h2 className="font-extrabold tracking-widest">
+                <div className="absolute backdrop-blur-sm backdrop-filter bg-black bg-opacity-60 cursor-default flex flex-col font-family-Montserrat group-hover:opacity-100 inset-0 items-center justify-center opacity-0 text-gray-100 transition-all px-3">
+                  <h2 className="font-extrabold tracking-widest text-center text-pretty">
                     {project.name}
                   </h2>
                   <h3 className="font-normal text-sm">{project.position}</h3>
