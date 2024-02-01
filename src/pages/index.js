@@ -56,7 +56,7 @@ export default function Home() {
             <h1 className="dark:text-gold-1 duration-500 font-extrabold font-family-Montserrat hover:tracking-widest text-3xl text-gray-800 text-shadow tracking-normal transition-all uppercase whitespace-nowrap xl:text-5xl">
               Syahrul Safarila
             </h1>
-            <p className="dark:text-gold-1 duration-500 italic text-center text-gray-600 transition-all xl:text-left xl:text-xl">
+            <p className="dark:text-gold-1 duration-500 text-center text-gray-600 transition-all xl:text-left xl:text-xl">
               Backend & Frontend Web Developer
             </p>
             <div className="dark:hidden flex gap-x-4">
@@ -64,7 +64,7 @@ export default function Home() {
                 href="https://instagram.com/sysafarila"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:animate-pulse"
+                className="hover:underline"
               >
                 Instagram
               </a>
@@ -72,7 +72,7 @@ export default function Home() {
                 href="https://github.com/sysafarila"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:animate-pulse"
+                className="hover:underline"
               >
                 GitHub
               </a>
@@ -80,7 +80,7 @@ export default function Home() {
                 href="https://id.linkedin.com/in/syahrul-safarila-4a1274188"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:animate-pulse"
+                className="hover:underline"
               >
                 LinkedIn
               </a>
@@ -90,7 +90,7 @@ export default function Home() {
                 href="https://instagram.com/sysafarila"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:animate-pulse text-gold-1"
+                className="hover:underline text-gold-1"
               >
                 Instagram
               </a>
@@ -98,7 +98,7 @@ export default function Home() {
                 href="https://github.com/sysafarila"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:animate-pulse text-gold-1"
+                className="hover:underline text-gold-1"
               >
                 GitHub
               </a>
@@ -106,7 +106,7 @@ export default function Home() {
                 href="https://id.linkedin.com/in/syahrul-safarila-4a1274188"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:animate-pulse text-gold-1"
+                className="hover:underline text-gold-1"
               >
                 LinkedIn
               </a>
