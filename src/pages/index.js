@@ -57,7 +57,7 @@ export default function Home() {
               Syahrul Safarila
             </h1>
             <p className="dark:text-gold-1 duration-500 text-center text-gray-600 transition-all xl:text-left xl:text-xl">
-              Backend & Frontend Web Developer
+              Full Stack Web Developer
             </p>
             <div className="dark:hidden flex gap-x-4">
               <a
