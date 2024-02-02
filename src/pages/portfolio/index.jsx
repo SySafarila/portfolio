@@ -84,7 +84,7 @@ export default function Portfolio() {
     <MainLayout>
       <Meta
         title="Portfolio | Syahrul Safarila"
-        description="Developing some website with React as javascript library, Tailwind CSS as CSS framework, and Laravel as backend's framework"
+        description="Develop some website with React as javascript library, Tailwind as CSS framework, and Laravel as PHP framework"
         image="https://i.pinimg.com/originals/1c/09/36/1c0936c9e5cd191312bcdc8216db9c08.jpg"
       />
       <main className="dark:text-gold-1 dark:text-opacity-80 flex flex-col gap-y-5 items-center main-landing-page-2 p-5 text-gray-600">
