@@ -1,8 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import Meta from "@/components/Meta";
 import MainLayout from "@/layouts/Main";
+import { useRouter } from "next/router";
 
 export default function Portfolio() {
+  const router = useRouter();
   const projects = [
     {
       img: "/portfolio/mandakiro.png",
@@ -53,6 +55,7 @@ export default function Portfolio() {
       img: "/portfolio/simapan.jpeg",
       name: "SIMAPAN & SPH Kabupaten Tangerang",
       position: "Backend Developer",
+      url: "https://simapan.tangerangkab.go.id",
     },
     {
       img: "/portfolio/lunaticastore.jpeg",
@@ -68,6 +71,7 @@ export default function Portfolio() {
       img: "/portfolio/pkm-bumdescimacan.png",
       name: "PKM Bumdes Cimacan",
       position: "Mentor, Tester, and Project Manager",
+      url: "https://pkm-bumdescimacan.com",
     },
     {
       img: "/portfolio/presences.png",
@@ -78,8 +82,22 @@ export default function Portfolio() {
       img: "/portfolio/ruangame.png",
       name: "RuanGame by SySafarila",
       position: "Full Stack Developer",
+      url: "https://www.ruangame.biz.id",
+    },
+    {
+      img: "/portfolio/react-pwa.png",
+      name: "React PWA",
+      position: "Frontend Developer - Tugas Kampus",
+      url: "https://pwa.sysafarila.my.id",
     },
   ];
+
+  const goToProject = (url) => {
+    if (url) {
+      return router.push(url);
+    }
+  };
+
   return (
     <MainLayout>
       <Meta
@@ -103,7 +121,12 @@ export default function Portfolio() {
                   alt="acp-indonesia"
                   className="h-full object-center object-contain w-full"
                 />
-                <div className="absolute backdrop-blur-sm backdrop-filter bg-black bg-opacity-60 cursor-default flex flex-col font-family-Montserrat group-hover:opacity-100 inset-0 items-center justify-center opacity-0 text-gray-100 transition-all px-3">
+                <div
+                  className={`absolute backdrop-blur-sm backdrop-filter bg-black bg-opacity-60 flex flex-col font-family-Montserrat group-hover:opacity-100 inset-0 items-center justify-center opacity-0 text-gray-100 transition-all px-3 ${
+                    project.url ? "cursor-pointer" : "cursor-default"
+                  }`}
+                  onClick={() => goToProject(project.url)}
+                >
                   <h2 className="font-extrabold tracking-widest text-center text-pretty">
                     {project.name}
                   </h2>
