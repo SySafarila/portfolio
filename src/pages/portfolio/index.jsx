@@ -10,46 +10,55 @@ export default function Portfolio() {
       img: "/portfolio/mandakiro.png",
       name: "MANDAKIRO",
       position: "Backend Developer",
+      url: "https://mandakiro.com",
     },
     {
       img: "/portfolio/ng-global-citizens.png",
       name: "NG GLOBAL CITIZENS",
       position: "Frontend Developer",
+      url: "https://ngglobalcitizens.com",
     },
     {
       img: "/portfolio/mss.png",
       name: "MITRA SISTEM SINERGI",
       position: "Backend & Frontend Developer",
+      url: "https://mitrasistemsinergi.com",
     },
     {
       img: "/portfolio/indotrans.png",
       name: "PT Indotrans Jaya Nusantara",
       position: "Backend Developer",
+      url: "https://indotransjayanusantara.com",
     },
     {
       img: "/portfolio/acp-indonesia.png",
       name: "ACP INDONESIA",
       position: "Backend Developer",
+      url: "https://www.acp-indonesia.com",
     },
     {
       img: "/portfolio/chococandy-bekasi.jpeg",
       name: "Chococandy Bekasi",
       position: "Backend Developer",
+      url: "https://chococandybekasi.com",
     },
     {
       img: "/portfolio/nsi.jpeg",
       name: "PT NOBEL SERTIFIKASI INDONESIA",
       position: "Backend Developer",
+      url: "https://www.nsicertification.com",
     },
     {
       img: "/portfolio/crown.jpeg",
       name: "PT. Crown Certification Indonesia",
       position: "Backend Developer",
+      url: "https://crowncertindo.com",
     },
     {
       img: "/portfolio/ssi.jpeg",
       name: "PT. SENTRAL SISTEM INDONESIA",
       position: "Backend Developer",
+      url: "https://sentralsistemindonesia.com",
     },
     {
       img: "/portfolio/simapan.jpeg",
@@ -66,6 +75,7 @@ export default function Portfolio() {
       img: "/portfolio/paragraphics-co.jpeg",
       name: "Paragraphics Co",
       position: "Frontend Developer",
+      url: "https://paragraphics.co",
     },
     {
       img: "/portfolio/pkm-bumdescimacan.png",
