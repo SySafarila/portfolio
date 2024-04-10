@@ -98,7 +98,13 @@ export default function Portfolio() {
       img: "/portfolio/react-pwa.png",
       name: "React PWA",
       position: "Frontend Developer - Tugas Kampus",
-      url: "https://pwa.sysafarila.my.id",
+      url: "https://pwa-convertions.sysafarila.my.id",
+    },
+    {
+      img: "/portfolio/js-paginate.png",
+      name: "JS-Paginate (Package)",
+      position: "A pagination generator for JavaScript with Median",
+      url: "https://www.npmjs.com/package/@sysafarila/js-paginate",
     },
   ];
 
@@ -128,7 +134,7 @@ export default function Portfolio() {
               >
                 <img
                   src={project.img}
-                  alt="acp-indonesia"
+                  alt={project.name}
                   className="h-full object-center object-contain w-full"
                 />
                 <div
