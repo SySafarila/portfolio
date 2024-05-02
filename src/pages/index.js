@@ -34,7 +34,7 @@ export default function Home() {
   return (
     <MainLayout>
       <Meta
-        title="Full Stack Web Developer | Syahrul Safarila"
+        title="Fullstack Developer | Syahrul Safarila"
         description="Develop some website with React as javascript library, Tailwind as CSS framework, and Laravel as PHP framework"
         image="https://i.pinimg.com/originals/1c/09/36/1c0936c9e5cd191312bcdc8216db9c08.jpg"
       />
@@ -57,7 +57,7 @@ export default function Home() {
               Syahrul Safarila
             </h1>
             <p className="dark:text-gold-1 duration-500 text-center text-gray-600 transition-all xl:text-left xl:text-xl">
-              Full Stack Web Developer
+              Fullstack Developer
             </p>
             <div className="dark:hidden flex gap-x-4">
               <a
