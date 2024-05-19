@@ -59,12 +59,12 @@ export default function Home() {
             <p className="dark:text-gold-1 duration-500 text-center text-gray-600 transition-all xl:text-left xl:text-xl">
               Fullstack Developer
             </p>
-            <div className="dark:hidden flex gap-x-4">
+            <div className="flex gap-x-4">
               <a
                 href="https://instagram.com/sysafarila"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline"
+                className="bg-black/10 hover:bg-black/15 dark:bg-white/10 dark:hover:bg-white/5 px-3 py-2 rounded-md text-gray-600 dark:text-gold-1"
               >
                 Instagram
               </a>
@@ -72,7 +72,7 @@ export default function Home() {
                 href="https://github.com/sysafarila"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline"
+                className="bg-black/10 hover:bg-black/15 dark:bg-white/10 dark:hover:bg-white/5 px-3 py-2 rounded-md text-gray-600 dark:text-gold-1"
               >
                 GitHub
               </a>
@@ -80,33 +80,7 @@ export default function Home() {
                 href="https://id.linkedin.com/in/syahrul-safarila-4a1274188"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline"
-              >
-                LinkedIn
-              </a>
-            </div>
-            <div className="dark:flex hidden gap-x-4">
-              <a
-                href="https://instagram.com/sysafarila"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:underline text-gold-1"
-              >
-                Instagram
-              </a>
-              <a
-                href="https://github.com/sysafarila"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:underline text-gold-1"
-              >
-                GitHub
-              </a>
-              <a
-                href="https://id.linkedin.com/in/syahrul-safarila-4a1274188"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:underline text-gold-1"
+                className="bg-black/10 hover:bg-black/15 dark:bg-white/10 dark:hover:bg-white/5 px-3 py-2 rounded-md text-gray-600 dark:text-gold-1"
               >
                 LinkedIn
               </a>
