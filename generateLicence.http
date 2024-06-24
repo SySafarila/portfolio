@@ -1,0 +1,9 @@
+POST http://localhost:3000/api/generate-licence HTTP/1.1
+content-type: application/json
+
+{
+    "password": "ThePassword",
+    "keyId": "mykeyid",
+    "product_name": "Laravel 10 - Base Admin Panel",
+    "product_id": 1
+}
