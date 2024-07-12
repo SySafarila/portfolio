@@ -39,6 +39,12 @@ export default function Home() {
         image="https://i.pinimg.com/originals/1c/09/36/1c0936c9e5cd191312bcdc8216db9c08.jpg"
       />
       <main className="flex flex-col gap-y-5 items-center justify-center main-landing-page p-5 relative dark:bg-dim-1">
+        <div className="fixed top-[69px] left-0 px-5 py-2 flex gap-2 w-full justify-center items-center bg-white dark:bg-white/10 xl:hidden">
+          <p className="text-gray-800 font-semibold dark:text-gold-1">
+            I stand with
+          </p>
+          <img src="/images/palestine.svg" alt="palestine" className="w-6" />
+        </div>
         <div className="flex flex-col gap-y-7 items-center w-full xl:flex-row xl:gap-x-16 xl:justify-center">
           <img
             src={photo}

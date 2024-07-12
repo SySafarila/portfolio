@@ -43,6 +43,10 @@ export default function Navbar() {
             </a>
           </span>
         </div>
+        <div className="xl:flex gap-2 w-full justify-center items-center hidden">
+          <p className="text-gray-800 font-semibold dark:text-gold-1">I stand with</p>
+          <img src="/images/palestine.svg" alt="palestine" className="w-6" />
+        </div>
       </div>
     </nav>
   );
