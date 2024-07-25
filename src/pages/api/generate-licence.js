@@ -18,7 +18,8 @@ const getJwksFromGithub = async () => {
 };
 
 export default async function handler(req, res) {
-  const { password, keyId, product_id, product_name } = req.body;
+  const { password, keyId, product_id, product_name, expiration_time } =
+    req.body;
 
   if (!password || password !== process.env.JWK_STORE_PASSWORD) {
     res.status(401).json({
@@ -29,7 +30,12 @@ export default async function handler(req, res) {
 
   try {
     const bearerToken = `Bearer ${process.env.GITHUB_PERSONAL_ACCESS_TOKEN}`;
-    const { jwk, jwt } = await generateLicence(keyId, product_name, product_id);
+    const { jwk, jwt } = await generateLicence(
+      keyId,
+      product_name,
+      product_id,
+      expiration_time ?? null
+    );
 
     const { sha, content } = (await getJwksFromGithub()).data;
     const contentDecode = atob(content);
